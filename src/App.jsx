@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { client } from "./lib/contentful";
 import { Gallery } from "./components/Gallery/Gallery";
 import "./App.scss";
+import { Header } from "./components/Header/Header";
 
 function App() {
   const [galleryData, setGalleryData] = useState("");
@@ -19,7 +20,7 @@ function App() {
 
   return (
     <>
-      {galleryData?.items?.map((item) => (
+          {galleryData?.items?.map((item) => (
         <Gallery
           imageURL={item.fields.image.fields.file.url}
           imageALT={item.fields.image.fields.title}
