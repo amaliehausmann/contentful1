@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { client } from "@/lib/contentful";
 import "./App.scss";
+import { Header } from "./components/Header/Header";
 
 function App() {
   const [productData, setProductData] = useState("");
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <>
+      <Header imageURL="/header.jpg" title={"Hjem"} />
       <h2>Telefon</h2>
       {productData?.items?.map((item) => 
         <div key={item.sys.id}>

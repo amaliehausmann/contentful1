@@ -1,7 +1,8 @@
+import styles from "./Header.module.scss";
 
-export function Header({title, imageURL}){
+export function Header({ title, imageURL }){
     return(
-        <header style={{backgroundImage: `url(${imageURL})`}}>
+        <header className={styles.header} style={{backgroundImage: `url(${imageURL})`}}>
             <h1>{title}</h1>
         </header>
     )
