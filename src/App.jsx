@@ -20,6 +20,7 @@ function App() {
 
   return (
     <>
+    
           {galleryData?.items?.map((item) => (
         <Gallery
           imageURL={item.fields.image.fields.file.url}
