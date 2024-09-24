@@ -55,7 +55,6 @@ function App() {
           )}
         ></SiteDescription>
       )}
-      <img src="../src/assets/KasperCertifiedbg.png" alt="Dette er Kasper Certified" className="KasperCertified" />
       <section className="gallery">
       {galleryData?.items?.map((item) => (
         <Gallery

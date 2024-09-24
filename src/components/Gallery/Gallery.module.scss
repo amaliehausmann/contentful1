@@ -1,6 +1,7 @@
 .galleryStyling{
     background-color: #a20909;
     border-radius: 20px;
+    position: relative;
 
     img{
         width: 100%;
@@ -13,5 +14,12 @@
         padding: 2vw;
         color: white;
         font-size: 1.2vw;
+    }
+
+    .KasperCertified{
+            position: absolute;
+            width: 7vw;
+            right: -5%;
+            top: -5%;
     }
 }
